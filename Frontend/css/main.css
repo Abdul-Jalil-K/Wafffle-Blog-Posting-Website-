@@ -180,7 +180,47 @@ body {
     border-radius: 0.375rem;
 }
 
+/* POST */
+
+.form {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.blog-input {
+    margin: 1rem auto;
+    padding: 10px;
+    display: block;
+    width: 30rem;
+    border-radius: 0.375rem;
+    background-color: #FFE082;
+    color: #4A3718;
+}
+
+textarea {
+    height: 25rem;
+}
+
+.submit-btn {
+    display: block;
+    margin: 1rem auto;
+    padding: 10px;
+    color: #4A3718;
+    background-color: transparent;
+    border: 1px solid #4A3718;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.submit-btn:hover {
+    background-color: #4A3718;
+    color: #FFFDD0;
+}
+
 /* FOOTER */
+
+
 
 .footer .flex-container {
     background-color: #FFE082;
@@ -206,6 +246,7 @@ body {
 
 .footer .nav-list {
     justify-content: flex-end;
+    padding-right: 10px;
 }
 
 .footer-link {
