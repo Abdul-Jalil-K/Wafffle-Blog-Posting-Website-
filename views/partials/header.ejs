@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wafffle</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+  <body>
+    <section class="navigation">
+      <nav class="nav-bar" id="navBar">
+        <div class="fluid-container">
+          <a class="brand" href="/"> Wafffle </a>
+          <button
+            type="button"
+            id="navToggle"
+            class="nav-toggle"
+            toggle="collapsible"
+            target="#navCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="toggle-icon"></span>
+          </button>
+          <div id="navCollapse" class="collapsible nav-collapse">
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a class="nav-link" href="/"> Home </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link button-link" href="/post"> New Post </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
