@@ -1,90 +1,98 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wafffle</title>
-    <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
     <section class="navigation">
-        <nav class="nav-bar" id="navBar">
-            <div class="fluid-container">
-                <a class="brand" href="index.html">
-                    Wafffle
-                </a>
-                <button type="button" id="navToggle" class="nav-toggle" toggle="collapsible" target="#navCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="toggle-icon"></span>
-                </button>
-                <div id="navCollapse" class="collapsible nav-collapse">
-                    <ul class="nav-list">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">
-                                Home
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link button-link" href="post.html">
-                                New Post
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+      <nav class="nav-bar" id="navBar">
+        <div class="fluid-container">
+          <a class="brand" href="index.html"> Wafffle </a>
+          <button
+            type="button"
+            id="navToggle"
+            class="nav-toggle"
+            toggle="collapsible"
+            target="#navCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="toggle-icon"></span>
+          </button>
+          <div id="navCollapse" class="collapsible nav-collapse">
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html"> Home </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link button-link" href="post.html"> New Post </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </section>
 
     <section class="body">
-        <div class="blog">
-            <h1 class="title">
-                The Beauty of Lorem Ipsum
-            </h1>
-            <h2 class="blog-date">
-                Sunday, May 24th, 2026
-            </h2>
-            <div class="blog-body">
-                Behold the majestic tapestry of Lorem Ipsum, the undisputed monarch of placeholder prose that effortlessly tames the wildest design layouts. Whenever its sacred syllables dance across a blank canvas, chaotic typography instantly surrenders to a harmonious symphony of meaningless elegance. It bravely masquerades as profound literature, tricking the untrained eye into believing a masterpiece has been written when, in truth, it is just beautifully organized gibberish. Printers and digital creators alike bow before its glorious, nonsensical wisdom, for without its comforting embrace, our mockups would crumble into a void of empty pixels. Long live the timeless sovereign of Dolor Sit Amet, the only text capable of saying absolutely nothing while simultaneously explaining everything.
-            </div>
+      <div class="view">
+        <h1 class="title">The Beauty of Lorem Ipsum</h1>
+        <h2 class="blog-date">Sunday, May 24th, 2026</h2>
+        <div class="blog-body">
+          Behold the majestic tapestry of Lorem Ipsum, the undisputed monarch of
+          placeholder prose that effortlessly tames the wildest design layouts.
+          Whenever its sacred syllables dance across a blank canvas, chaotic
+          typography instantly surrenders to a harmonious symphony of
+          meaningless elegance. It bravely masquerades as profound literature,
+          tricking the untrained eye into believing a masterpiece has been
+          written when, in truth, it is just beautifully organized gibberish.
+          Printers and digital creators alike bow before its glorious,
+          nonsensical wisdom, for without its comforting embrace, our mockups
+          would crumble into a void of empty pixels. Long live the timeless
+          sovereign of Dolor Sit Amet, the only text capable of saying
+          absolutely nothing while simultaneously explaining everything.
         </div>
-        <div class="buttons">
-            <form action="/delete" method="POST">
-                <input type="text" name="The Beauty of Lorem Ipsum" value="The Beauty of Lorem Ipsum" hidden>
-                <button type="submit" class="delete-btn">
-                    Delete Post
-                </button>
-            </form>
-            <a class="edit-btn" href="post.html">
-                Edit Post
-            </a>
-        </div>
+      </div>
+      <div class="buttons">
+        <form action="/delete" method="POST">
+          <input
+            type="text"
+            name="The Beauty of Lorem Ipsum"
+            value="The Beauty of Lorem Ipsum"
+            hidden
+          />
+          <button type="submit" class="delete-btn">Delete Post</button>
+        </form>
+        <a class="edit-btn" href="post.html"> Edit Post </a>
+      </div>
     </section>
 
     <section class="footer">
-        <div class="container">
-            <footer class="flex-container">
-                <p class="copyright">
-                    © 2026
-                </p>
+      <div class="container">
+        <footer class="flex-container">
+          <p class="copyright">© 2026</p>
 
-                <p class="brand">
-                    Wafffle
-                </p>
-                <ul class="nav-list">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">
-                            Home
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link button-link" href="post.html">
-                            New Post
-                        </a>
-                    </li>
-                </ul>
-            </footer>
-        </div>
+          <p class="brand">Wafffle</p>
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"> Home </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link button-link" href="post.html"> New Post </a>
+            </li>
+          </ul>
+        </footer>
+      </div>
     </section>
 
     <script src="index.js"></script>
-</body>
+  </body>
 </html>

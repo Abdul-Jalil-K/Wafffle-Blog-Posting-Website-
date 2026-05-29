@@ -1,156 +1,172 @@
 <!-- Beginning Project -->
 
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wafffle</title>
-    <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
     <!-- This is a custom Navbar I've built without using Bootstrap. Content, styling, and behavior are all homemade. -->
     <section class="navigation">
-        <nav class="nav-bar" id="navBar">
-            <div class="fluid-container">
-                <a class="brand" href="index.html">
-                    Wafffle
-                </a>
-                <button type="button" id="navToggle" class="nav-toggle" toggle="collapsible" target="#navCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="toggle-icon"></span>
-                </button>
-                <div id="navCollapse" class="collapsible nav-collapse">
-                    <ul class="nav-list">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">
-                                Home
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link button-link" href="post.html">
-                                New Post
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+      <nav class="nav-bar" id="navBar">
+        <div class="fluid-container">
+          <a class="brand" href="index.html"> Wafffle </a>
+          <button
+            type="button"
+            id="navToggle"
+            class="nav-toggle"
+            toggle="collapsible"
+            target="#navCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="toggle-icon"></span>
+          </button>
+          <div id="navCollapse" class="collapsible nav-collapse">
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html"> Home </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link button-link" href="post.html"> New Post </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </section>
 
     <section class="body">
-
-        <!-- This is my blog grid I made, again, completely native with no Bootstrap, or other libraries. it was difficult getting the alignment correct, and especially getting them to "start" on the same height. -->
-        <div class="blog-grid">
+      <!-- This is my blog grid I made, again, completely native with no Bootstrap, or other libraries. it was difficult getting the alignment correct, and especially getting them to "start" on the same height. -->
+      <div class="blog-grid">
         <!-- Main Blog List -->
 
         <div class="main-list">
-            <ul class="blogs">
-                <li class="blog">
-                    <p class="date">
-                        Sunday, May 24th, 2026
-                    </p>
-                    <h2 class="blog-title">
-                        <a class="view-link" href="view.html">
-                            The Beauty of Lorem Ipsum
-                        </a>
-                    </h2>
-                    <p>
-                        Behold the majestic tapestry of **Lorem Ipsum**, the undisputed monarch of placeholder prose that effortlessly tames the wildest design layouts. Whenever its sacred syllables dance across a blank canvas, chaotic typography instantly surrenders to a harmonious symphony of meaningless elegance. It bravely masquerades as profound literature, tricking the untrained eye into believing a masterpiece has been written when, in truth, it is just beautifully organized gibberish. Printers and digital creators alike bow before its glorious, nonsensical wisdom, for without its comforting embrace, our mockups would crumble into a void of empty pixels. Long live the timeless sovereign of *Dolor Sit Amet*, the only text capable of saying absolutely nothing while simultaneously explaining everything.
-                    </p>
-                    <hr>
-                </li>
-                <li class="blog">
-                    <p class="date">
-                        Sunday, May 24th, 2026
-                    </p>
-                    <h2 class="blog-title">
-                        <a class="view-link" href="view.html">
-                            The Horror of Lorem Ipsum
-                        </a>
-                    </h2>
-                    <p>
-                        Away with the wretched plague of **Lorem Ipsum**, that deceptive imposter of literature that suffocates truly authentic design with its mind-numbing monotony. Its lazy, repetitive syllables act like a hypnotic trap, lulling unsuspecting creators into a false sense of security while completely masking how real text would actually break a layout. It is a cowardly shield for uninspired mockups, pretending to hold substance when it is nothing more than a hollow echo of dead Latin masquerading as progress. Clients and developers alike are routinely blinded by its superficial charm, only to suffer a rude awakening when actual content inevitably shatters the pristine, artificial illusion. May the tyrannical reign of *Dolor Sit Amet* finally crumble into obscurity, freeing our designs from a soul-crushing void of meaningless pixels.
-                    </p>
-                    <hr>
-                </li>
-            </ul>
+          <ul class="blogs">
+            <li class="blog">
+              <p class="date">Sunday, May 24th, 2026</p>
+              <h2 class="blog-title">
+                <a class="view-link" href="view.html">
+                  The Beauty of Lorem Ipsum
+                </a>
+              </h2>
+              <p>
+                Behold the majestic tapestry of Lorem Ipsum, the undisputed
+                monarch of placeholder prose that effortlessly tames the wildest
+                design layouts. Whenever its sacred syllables dance across a
+                blank canvas, chaotic typography instantly surrenders to a
+                harmonious symphony of meaningless elegance. It bravely
+                masquerades as profound literature, tricking the untrained eye
+                into believing a masterpiece has been written when, in truth, it
+                is just beautifully organized gibberish. Printers and digital
+                creators alike bow before its glorious, nonsensical wisdom, for
+                without its comforting embrace, our mockups would crumble into a
+                void of empty pixels. Long live the timeless sovereign of Dolor
+                Sit Amet, the only text capable of saying absolutely nothing
+                while simultaneously explaining everything.
+              </p>
+              <hr />
+            </li>
+            <li class="blog">
+              <p class="date">Sunday, May 24th, 2026</p>
+              <h2 class="blog-title">
+                <a class="view-link" href="view.html">
+                  The Horror of Lorem Ipsum
+                </a>
+              </h2>
+              <p>
+                Away with the wretched plague of Lorem Ipsum, that deceptive
+                imposter of literature that suffocates truly authentic design
+                with its mind-numbing monotony. Its lazy, repetitive syllables
+                act like a hypnotic trap, lulling unsuspecting creators into a
+                false sense of security while completely masking how real text
+                would actually break a layout. It is a cowardly shield for
+                uninspired mockups, pretending to hold substance when it is
+                nothing more than a hollow echo of dead Latin masquerading as
+                progress. Clients and developers alike are routinely blinded by
+                its superficial charm, only to suffer a rude awakening when
+                actual content inevitably shatters the pristine, artificial
+                illusion. May the tyrannical reign of Dolor Sit Amet finally
+                crumble into obscurity, freeing our designs from a soul-crushing
+                void of meaningless pixels.
+              </p>
+              <hr />
+            </li>
+          </ul>
         </div>
-
 
         <!-- Side Blog List -->
         <div class="side-list">
-            <h2 class="sub-title">
-                Recent Posts
-            </h2>
-            <ul class="side-blogs">
-                <li class="side-blog">
-                    <p class="date">
-                        Sunday, May 24th, 2026
-                    </p>
-                    <h4 class="side-blog-title">
-                        <a class="view-link" href="view.html">
-                            The Beauty of Lorem Ipsum
-                        </a>
-                    </h4>
-                    <p>
-                        Behold the majestic tapestry of **Lorem Ipsum**, the undisputed monarch of placeholder prose that effortlessly tames the wildest design layouts. Whenever its sacred syllables dance across a blank canvas, chaotic typography instantly surrenders to a harmonious symphony of meaningless elegance...   
-                    </p>
-                    <hr>
-                </li>
-                <li class="side-blog">
-                    <p class="date">
-                        Sunday, May 24th, 2026
-                    </p>
-                    <h4 class="side-blog-title">
-                        <a class="view-link" href="view.html">
-                            The Horror of Lorem Ipsum
-                        </a>
-                    </h4>
-                    <p>
-                        Away with the wretched plague of **Lorem Ipsum**, that deceptive imposter of literature that suffocates truly authentic design with its mind-numbing monotony. Its lazy, repetitive syllables act like a hypnotic trap, lulling unsuspecting creators into a false sense of security while completely masking how real text would actually break a layout...
-                    </p>
-                    <hr>
-                </li>
-            </ul>
+          <h2 class="sub-title">Recent Posts</h2>
+          <ul class="side-blogs">
+            <li class="side-blog">
+              <p class="date">Sunday, May 24th, 2026</p>
+              <h4 class="side-blog-title">
+                <a class="view-link" href="view.html">
+                  The Beauty of Lorem Ipsum
+                </a>
+              </h4>
+              <p>
+                Behold the majestic tapestry of Lorem Ipsum, the undisputed
+                monarch of placeholder prose that effortlessly tames the wildest
+                design layouts. Whenever its sacred syllables dance across a
+                blank canvas, chaotic typography instantly surrenders to a
+                harmonious symphony of meaningless elegance...
+              </p>
+              <hr />
+            </li>
+            <li class="side-blog">
+              <p class="date">Sunday, May 24th, 2026</p>
+              <h4 class="side-blog-title">
+                <a class="view-link" href="view.html">
+                  The Horror of Lorem Ipsum
+                </a>
+              </h4>
+              <p>
+                Away with the wretched plague ofLorem Ipsum, that deceptive
+                imposter of literature that suffocates truly authentic design
+                with its mind-numbing monotony. Its lazy, repetitive syllables
+                act like a hypnotic trap, lulling unsuspecting creators into a
+                false sense of security while completely masking how real text
+                would actually break a layout...
+              </p>
+              <hr />
+            </li>
+          </ul>
         </div>
-        </div>
-
+      </div>
     </section>
-
-
 
     <!-- Footer -->
 
     <!-- This is my natively built Footer. This one was relatively simple to build, since I've already built it before, and it was just a matter of copying the code and editing parts of it to fit better -->
     <section class="footer">
-        <div class="container">
-            <footer class="flex-container">
-                <p class="copyright">
-                    © 2026
-                </p>
+      <div class="container">
+        <footer class="flex-container">
+          <p class="copyright">© 2026</p>
 
-                <p class="brand">
-                    Wafffle
-                </p>
-                <ul class="nav-list">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">
-                            Home
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link button-link" href="post.html">
-                            New Post
-                        </a>
-                    </li>
-                </ul>
-            </footer>
-        </div>
+          <p class="brand">Wafffle</p>
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"> Home </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link button-link" href="post.html"> New Post </a>
+            </li>
+          </ul>
+        </footer>
+      </div>
     </section>
 
-
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
