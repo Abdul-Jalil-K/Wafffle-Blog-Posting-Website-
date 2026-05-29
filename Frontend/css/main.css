@@ -9,6 +9,11 @@ body {
     background-color: #FFF8E1;
 }
 
+.space {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
 /* NAVBAR */
 
 :root {
@@ -142,9 +147,17 @@ body {
 
 
 
-.blogs hr, .side-blogs hr {
+.blogs hr,.side-blogs hr {
     margin-top: 3rem;
     margin-bottom: 3rem;
+}
+
+.blogs hr {
+    color: #FFF8E1;
+    border-color: #FFF8E1;
+}
+
+.side-blogs hr {
     color: #4A3718;
     border-color: #4A3718;
 }
@@ -157,11 +170,19 @@ body {
     border-radius: 0.375rem;
 }
 
-.view-link {
+.blog .view-link {
+    color: #FFF8E1;
+}
+
+.blog .view-link:hover {
+    color: #FFFDD0;
+}
+
+.side-blog .view-link {
     color: #000;
 }
 
-.view-link:hover {
+.side-blog .view-link:hover {
     color: #4A3718;
 }
 
@@ -218,6 +239,52 @@ textarea {
     color: #FFFDD0;
 }
 
+/* VIEW */
+
+
+.blog {
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #4A3718;
+    color: #FFF8E1;
+    width: 30rem;
+}
+
+.buttons {
+    text-align: center;
+}
+
+.delete-btn {
+    display: block;
+    margin: 1rem auto;
+    padding: 10px;
+    color: #FFF8E1;
+    background-color: #C6412E;
+    border: 1px solid #C6412E;
+    border-radius: 0.375rem;
+    cursor: pointer;
+}
+
+.edit-btn {
+    text-decoration: none;
+    display: inline-block;
+    margin: 1rem auto;
+    padding: 10px;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    color: #4A3718;
+    background-color: transparent;
+    border: 1px solid #4A3718;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.edit-btn:hover {
+    background-color: #4A3718;
+    color: #FFF8E1;
+}
+
+
+
 /* FOOTER */
 
 
@@ -258,6 +325,7 @@ textarea {
 
 @media (max-width: 992px) {
 
+
     /* NAVBAR */
 
     .fluid-container {
@@ -286,7 +354,6 @@ textarea {
 
     .nav-list {
         flex-direction: column;
-        width: 100%;
     }
 
     .nav-collapse {
@@ -297,4 +364,42 @@ textarea {
     .nav-collapse.active {
         max-height: 300px;
     }
+
+    /* BODY */
+
+    .blog-grid {
+        grid-template-columns: 1fr;
+    }
+    
+
+    /* POST */
+
+    textarea {
+        height: 20rem;
+    }
+
+    /* VIEW */
+
+    .blog {
+        width: 20rem;
+    }
+
+    .buttons {
+        margin-bottom: 2rem;
+    }
+
+    /* FOOTER */
+
+    .footer .flex-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+
+    .footer .brand {
+        padding-left: 10px;
+    }
+
+
 }
