@@ -131,11 +131,6 @@ body {
   background-color: #fff8e1;
 }
 
-.main-list > :first-child,
-.side-list > :first-child {
-  margin-top: 0;
-}
-
 .blog-grid {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -143,7 +138,32 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+
+  align-items: stretch;
 }
+
+.main-list, .side-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-list > :first-child,
+.side-list > :first-child {
+    margin-top: 0;
+}
+
+.blogs, .side-blogs {
+  flex-grow: 1;
+  margin: 0;
+  padding: 0;
+}
+
+.blogs hr,
+.side-blogs hr {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
 
 .blogs {
   padding: 2rem;
@@ -152,11 +172,7 @@ body {
   color: #4a3718;
 }
 
-.blogs hr,
-.side-blogs hr {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-}
+
 
 .blogs hr {
   color: #fff8e1;
@@ -169,9 +185,9 @@ body {
 }
 
 .blog {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  background-color: #fff8e1;
+  margin: 2rem auto;
+  background-color: #4a3718;
+  color: #fff8e1;
   padding: 1rem;
   border-radius: 0.375rem;
   font-family: "Merriweather", serif;
@@ -179,6 +195,25 @@ body {
   font-weight: 450;
   font-style: normal;
   line-height: 1.75;
+}
+
+.date-container {
+  position: relative;
+  height: 1.5rem;
+}
+
+.date {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  transition: opacity 0.8s ease-in-out;
+  opacity: 1;
+}
+
+.date.hidden {
+  opacity: 0;
+  pointer-events: none;
 }
 
 .blog .view-link {
@@ -193,6 +228,31 @@ body {
   color: #fffdd0;
 }
 
+.side-list {
+  padding: 2rem;
+  border-radius: 0.375rem;
+  background-color: #ffe082;
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-weight: 450;
+  font-style: normal;
+  line-height: 1.65;
+}
+
+.side-blog {
+  margin: 2rem auto;
+  background-color: #fff8e1;
+  color: #4a3718;
+  padding: 1rem;
+  border-radius: 0.375rem;
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-weight: 450;
+  font-style: normal;
+  line-height: 1.65;
+}
+
+
 .side-blog .view-link {
   color: #000;
   font-family: "Josefin Sans", sans-serif;
@@ -205,25 +265,6 @@ body {
   color: #4a3718;
 }
 
-.side-list {
-  padding: 2rem;
-  border-radius: 0.375rem;
-  background-color: #ffe082;
-}
-
-.side-blog {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  background-color: #fff8e1;
-  color: #4a3718;
-  padding: 1rem;
-  border-radius: 0.375rem;
-  font-family: "Merriweather", serif;
-  font-optical-sizing: auto;
-  font-weight: 450;
-  font-style: normal;
-  line-height: 1.65;
-}
 
 /* POST */
 
@@ -422,7 +463,14 @@ textarea {
 
   .blog-grid {
     grid-template-columns: 1fr;
+    max-width: 900px;
+    
   }
+
+  .main-list, .side-list {
+    place-self: center;
+    width: 30rem;
+}
 
   /* POST */
 
@@ -432,7 +480,7 @@ textarea {
 
   /* VIEW */
 
-  .blog {
+  .view {
     width: 20rem;
   }
 
