@@ -82,7 +82,7 @@ app.post("/post", (req, res) => {
     const title = req.body.title;
     const body = req.body.body;
 
-    createBlog(title, content);
+    createBlog(title, body);
     res.redirect('/');
 });
 
