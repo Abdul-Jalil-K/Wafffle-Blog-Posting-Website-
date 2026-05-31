@@ -5,6 +5,7 @@ import hijriDate from 'hijri-date';
 
 const app = express();
 const port = 3000;
+const HijriDate = hijriDate.default || hijriDate;
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('public'));
@@ -23,6 +24,7 @@ function Blog(title, content) {
     this.content = content;
     this.rawDate = new Date();
     this.date = this.rawDate.toLocaleString();
+    this.postDate = this.rawDate.getDate() + '/' + this.rawDate.getMonth() + '/' + this.rawDate.getFullYear();
 
     let hours = this.rawDate.getHours();
     const minutes = this.rawDate.getMinutes();
@@ -39,7 +41,8 @@ function Blog(title, content) {
     this.customTime = hours + ":" + formattedMinutes + ":" + formattedSeconds + ' ' + ampm;
 
     this.hijriDay = new HijriDate();
-    this.fullHijriDate = this.hijriDay.getDate() + "/" + this.hijriDay.getMonth() + "/" + this.hijriDay.getFullYear() + ', ' + this.customTime;
+    this.fullHijriDate = this.hijriDay.getDate() + '/' + this.hijriDay.getMonth() + '/' + this.hijriDay.getFullYear() + ', ' + this.customTime;
+    this.hijriPostDate = this.hijriDay.getDate() + '/' + (this.rawDate.getMonth() + 1) + '/' + this.hijriDay.getFullYear();
 }
 
 function createBlog(title, content) {
@@ -68,14 +71,15 @@ app.get('/view/:id', (req, res) => {
     const index = req.params.id;
     const blog = blogs[index];
 
-    res.render('view.ejs', { blogId: index, title: blog.title, content: blog.content });
+    console.log(blog.title);
+    res.render('view.ejs', { blogId: index, title: blog.title, content: blog.content, postDate: blog.postDate, hijriPostDate: blog.hijriPostDate});
 });
 
 app.get('/edit/:id', (req, res) => {
     const index = req.params.id;
     const blog = blogs[index];
 
-    res.render('create.ejs', { blogId: index, title: blog.title, content: blog.content });
+    res.render('post.ejs', { blogId: index, title: blog.title, content: blog.content });
 });
 
 app.post("/post", (req, res) => {

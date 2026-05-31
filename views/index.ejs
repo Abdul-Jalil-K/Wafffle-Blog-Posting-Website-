@@ -12,7 +12,7 @@
                 Nothing to talk about...
               </p>
               <% } else { %>
-              <% blogs.forEach((blog) => { %>
+              <% blogs.forEach((blog, index) => { %>
               <li class="blog">
                 <div class="date-container">
                   <p class="date Gregorian-date">
@@ -23,7 +23,7 @@
                   </p>
                 </div>
                 <h2 class="blog-title">
-                  <a class="view-link" href="/view/<%= blogs.indexOf(blog) %>">
+                  <a class="view-link" href="/view/<%= index %>">
                     <%= blog.title %>
                   </a>
                 </h2>
@@ -42,14 +42,12 @@
             <h2 class="sub-title">Recent Posts</h2>
             <ul class="side-blogs">
               <% if (blogs.length === 0) { %>
-              <p>
-                No blogs...
-              </p>
+              <p>No blogs...</p>
               <% } else { %>
-              <% blogs.forEach((blog) => { %>
+              <% blogs.slice().reverse().forEach((blog, index) => { %>
               <li class="side-blog">
                 <h2 class="blog-title">
-                  <a class="view-link" href="view/<%= blogs.indexOf(blog) %>">
+                  <a class="view-link" href="view/<%= blogs.length - 1 - index %>">
                     <%= blog.title %>
                   </a>
                 </h2>

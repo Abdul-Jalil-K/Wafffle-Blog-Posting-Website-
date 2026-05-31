@@ -7,11 +7,12 @@
           <!-- Create New Post Form -->
           <div class="form">
             <form action="/edit" method="POST">
+              <input type="text" name="index" hidden value="<%= blogId %>" />
               <input id="title" class="blog-input" name="title" placeholder="Title" value="<%= title %>" />
               <textarea class="blog-input" name="body" placeholder="Body" value="">
                 <%= content %>
               </textarea>
-              <button type="submit" class="submit-btn">Post</button>
+              <button type="submit" class="submit-btn">Edit</button>
             </form>
           </div>
         </section>
