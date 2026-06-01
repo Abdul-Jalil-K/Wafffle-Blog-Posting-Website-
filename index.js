@@ -2,9 +2,12 @@ import ejs from "ejs";
 import express from "express";
 import bodyParser from "body-parser";
 import hijriDate from 'hijri-date';
+import env from "dotenv";
+
+env.config();
 
 const app = express();
-const port = 3000;
+const port = rocess.env.PORT || 3000;
 const HijriDate = hijriDate.default || hijriDate;
 
 app.use(bodyParser.urlencoded({ extended: true }));
