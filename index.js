@@ -7,7 +7,7 @@ import env from "dotenv";
 env.config();
 
 const app = express();
-const port = rocess.env.PORT || 3000;
+const port = process.env.PORT || 3000;
 const HijriDate = hijriDate.default || hijriDate;
 
 app.use(bodyParser.urlencoded({ extended: true }));
