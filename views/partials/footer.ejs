@@ -1,7 +1,14 @@
 <section class="footer">
       <div class="container">
         <footer class="flex-container">
-          <p class="copyright">© 2026</p>
+          <div class="date-container">
+          <p class="date Gregorian-date">
+            © <%= new Date().getFullYear() %>
+          </p>
+          <p class="date Hijri-date hidden">
+            © <%= new HijriDate().getFullYear() %>
+          </p>
+        </div>
 
           <p class="brand">Wafffle</p>
           <ul class="nav-list">
